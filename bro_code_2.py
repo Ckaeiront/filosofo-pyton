@@ -13,9 +13,9 @@ def multiply(num1, num2):
     return result
 
 
-x = multiply(6, 8)
+# x = multiply(6, 8)
 
-print(x)
+# print(x)
 
 #   Keyword arguments = arguments preceded by an identifier when we pass them to a function
 #                       the order of the arguments doesn't matter like positional
@@ -24,7 +24,7 @@ print(x)
 def greet(first, middle, last):
     print("hello " + first, middle, last)
 
-greet(last='Bro', first='Codigos', middle='Teixeira')
+# greet(last='Bro', first='Codigos', middle='Teixeira')
 
 #   nested function calls = function calls inside of other functions
 #                           innermost function calls are resolved first
@@ -35,4 +35,22 @@ greet(last='Bro', first='Codigos', middle='Teixeira')
 # num = abs(num) # convert a negative to positive number
 # num = round(num)
 
-num = round(abs(float(input('Enter a whole positive number: '))))
+# num = round(abs(float(input('Enter a whole positive number: '))))
+
+#   variable scope = the region that a variable is recognized
+#                    a variable is only available from inside the region it is created
+#                    a global and locally scoped versions of a variable can be created
+
+# name = 'Brother'
+
+# def display_name():
+    # name = 'code'
+    # print(name)
+
+# print(name)
+# display_name()
+
+#   *args = parameter that will pack all arguments into a tuple
+#           useful so that a function can accept a varying amount of arguments
+
+
