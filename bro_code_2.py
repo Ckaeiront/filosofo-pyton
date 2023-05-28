@@ -1,8 +1,8 @@
 #   Functions = block of code which is excecuted only when it's called
 
-def hello(first_name, last_name, age):
-    print('hello, ' + first_name, last_name + ' and age of ' + str(age))
-    print('have a nice day!')
+# def hello(first_name, last_name, age):
+#     print('hello, ' + first_name, last_name + ' and age of ' + str(age))
+#     print('have a nice day!')
 
 # hello('Brother', 'codigos', 21)
 
@@ -53,4 +53,21 @@ def greet(first, middle, last):
 #   *args = parameter that will pack all arguments into a tuple
 #           useful so that a function can accept a varying amount of arguments
 
+def add(*args):
+    sum = 0
+    args = list(args)
+    args[0] = 2
+    for i in args:
+        sum += i
+    return sum
 
+# somados = add(1, 4, 7, 8, 39, 40)
+# print(somados)
+
+#   **kwargs = parameter that will pack all arguments into a dictionary
+#              useful so that a function can accept a varying amount of keyword arguments
+
+def hello(first, last):
+    print('hello, ' + first + ' ' + last)
+
+hello(first='Brother', last='Codigos')
