@@ -67,7 +67,15 @@ def add(*args):
 #   **kwargs = parameter that will pack all arguments into a dictionary
 #              useful so that a function can accept a varying amount of keyword arguments
 
-def hello(first, last):
-    print('hello, ' + first + ' ' + last)
+def hi(**namespace):
+    # print('hello, ' + kwargs['first'] + ' ' + kwargs['last'])
+    print('hello', end=' ')
+    for key,value in namespace.items():
+        print(value, end=' ')
 
-hello(first='Brother', last='Codigos')
+hi(title='Mr.', first='Brother', last='Codigos')
+
+
+#   str.format() = optional method that gives users
+#                  more control when displaying output
+#
