@@ -67,15 +67,34 @@ def add(*args):
 #   **kwargs = parameter that will pack all arguments into a dictionary
 #              useful so that a function can accept a varying amount of keyword arguments
 
-def hi(**namespace):
-    # print('hello, ' + kwargs['first'] + ' ' + kwargs['last'])
-    print('hello', end=' ')
-    for key,value in namespace.items():
-        print(value, end=' ')
+# def hi(**namespace):
+#     # print('hello, ' + kwargs['first'] + ' ' + kwargs['last'])
+#     print('hello', end=' ')
+#     for key,value in namespace.items():
+#         print(value, end=' ')
 
-hi(title='Mr.', first='Brother', last='Codigos')
+# hi(title='Mr.', first='Brother', last='Codigos')
 
 
 #   str.format() = optional method that gives users
 #                  more control when displaying output
 #
+
+# animal = 'cow'
+# item = 'moon'
+
+# print("the {} jumped over the {}".format(animal, item))
+# print("the {1} jumped over the {0}".format(animal, item)) # positional argument
+# print("the {animal} jumped over the {item}".format(animal = 'cow', item = 'moon')) # keyword argument
+# print("the {item} jumped over the {animal}".format(animal = 'cow', item = 'moon')) # keyword argument
+
+# text = "the {} jumped over the {}"
+
+# print(text.format(animal, item))
+
+name = 'brother'
+
+print('hello, my name is {}'.format(name))
+print('hello, my name is {:20}, nice.'.format(name))
+print('padding to {:>20} codigos rapazes'.format(name))
+print('padding to {:<20} codigos rapazes'.format(name))
