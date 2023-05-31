@@ -92,9 +92,90 @@ def add(*args):
 
 # print(text.format(animal, item))
 
-name = 'brother'
+# name = 'brother'
 
-print('hello, my name is {}'.format(name))
-print('hello, my name is {:20}, nice.'.format(name))
-print('padding to {:>20} codigos rapazes'.format(name))
-print('padding to {:<20} codigos rapazes'.format(name))
+# print('hello, my name is {}'.format(name))
+# print('hello, my name is {:20}, nice.'.format(name))
+# print('padding to {:>20} codigos rapazes'.format(name))
+# print('padding to {:<20} codigos rapazes'.format(name))
+# print('padding to {:^20} codigos rapazes'.format(name))
+
+# format numbers
+
+# number = 100000
+
+# print('the number of pi is {:.3f}'.format(number))
+# print('the number of pi is {:,}'.format(number))
+# print('the number of pi is {:b}'.format(number))
+# print('the number of pi is {:o}'.format(number))
+# print('the number of pi is {:x}'.format(number))
+# print('number is {:E}'.format(number))
+
+
+
+#   random
+
+import random
+
+# x = random.randint(1, 7)
+# y = round(random.random() * 10)
+
+# myList = ['rock', 'paper', 'scissors']
+# z = random.choice(myList)
+
+# print(z)
+
+# cards = [1, 2, 3, 4, 5, 6, 7, 8, 9, 'J', 'Q', 'K', 'A']
+
+# random.shuffle(cards)
+
+# print(cards)
+
+
+
+# exceptions = events detected duting execution that interrupt the flow of a program
+
+# 👇 code prone to have an error, like dividing by zero, so we wrap into a try except block, like try catch in javascript
+
+# try:
+#     numerator = int(input('enter a number to divide: '))
+#     denominator = int(input('enter a number to divide by: '))
+#     result = numerator / denominator
+# except ZeroDivisionError as e:
+#     print(e)
+#     print('cannot divide a number by zero')
+# except ValueError as error:
+#     print(error)
+#     print('enter only numbers, please')
+# except Exception as intankavel:
+#     print(intankavel)
+#     print('something went wrong with your inputs')
+# else:
+#     print(result)
+#     print('vai tomar no cu, fdp')
+
+#  👆 only works if no error is encoutered
+# finally:
+#     print('files of any bitches')
+
+#  👆 always execute, no matter what 
+
+#   file detection = finnaly we're going to use os module to play with files in our computer
+#
+
+import os
+
+# path = 'C:\\Users\\soule\\Documents\\filosofo pyton\\proTrial.txt'
+
+# if os.path.exists(path):
+#     print('that location exists')
+#     if os.path.isfile(path):
+#         print('that\'s a file')
+#     elif os.path.isdir(path):
+#         print('that\'s a directory')
+# else:
+#     print('cannot locate this location')
+
+
+
+#   reading files in pitón
