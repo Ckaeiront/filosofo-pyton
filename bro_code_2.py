@@ -178,4 +178,94 @@ import os
 
 #   reading files in pitón
 
+# try:
+#     with open('proTrial.txt') as file:
+#         print(file.read())
+# except FileNotFoundError:
+#     print('the file was not found')
 
+#   writing files in paitón, so sit back, relax and enjoy the show
+
+# texto = "fala galeraaa blz aqui quem fala dnv e o andromeda jogos"
+# text2 = '\nain q epistemologia'
+
+# with open('falagalera.txt', 'w') as file: # w = write
+#     file.write(texto)
+
+# with open('falagalera.txt', 'a') as file: # a = append
+#     file.write(text2)
+
+# with open('falagalera.txt') as file:
+#     print(file.read())
+
+
+
+
+#   copying files in paiton
+#   copyfile() copies content of a file
+#   copy() copyfile + permission mode + destination can be a directory
+#   copy2() copy + copies metadata (file creation and modification times)
+
+import shutil
+                # Source          # destination
+# shutil.copyfile('falagalera.txt', 'taro.txt') 
+shutil.copy('falagalera.txt', 'C:\\Users\\soule\\OneDrive\\Área de Trabalho\\vinicius.txt') 
+# same with copy2
+
+
+
+#   moving files in pay thón
+
+# source = 'src'
+# destination = 'C:\\Users\\soule\\OneDrive\\Área de Trabalho\\src'
+
+# try:
+#     if os.path.exists(destination):
+#         print('there\'s already a file there')
+#     else:
+#         os.replace(source, destination)
+#         print(source + ' was moved')
+# except FileNotFoundError:
+#     print(destination + ' not found')
+
+
+
+
+#   delete files with py ton
+
+# path = 'pesetas'
+
+# try:
+#     # os.remove(path)
+#     # os.remove() # no permission to delete empty folders
+#     os.rmdir(path)
+#     # shutil.rmtree(path) # delete an directory and all files in it, so, be careful!!
+# except FileNotFoundError:
+#     print(path + ' not found')
+# except PermissionError:
+#     print('you do not have permission to delete that')
+# except OSError:
+#     print('you cannot delete it using that function.')
+# else:
+#     print(path + ' was deleted')
+
+#   OBS: EXCEPTION ERRORS APPEAR ON THE CONSOLE
+# os.remove('deletar.txt')
+
+
+
+#   MODULES IN PYTHOOOOON
+
+#   modules = a file containing python code. May contain functions, classes, etc.
+#   used with modular programming, which is to separate program into parts
+
+# import module1 as msg
+from module1 import hello, bye
+
+
+hello()
+bye()
+
+help("modules")
+
+# ==================== end of section 2 ====================
