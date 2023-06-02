@@ -4,17 +4,15 @@ questions = {
     'python is tributed to which comedy group?': 'C',
     'Is the earth round?': 'A',
 }
-
 options = [['A. Guido van Rossum', 'B. Elon Musk', 'C. Bill Gates', 'D. Mark Zuckerburg'],
            ['A. 1989', 'B. 1991', 'C. 2000', 'D. 2016'],
            ['A. Lonely Island', 'B. Smosh', 'C. Monty Python', 'D. SNL'],
            ['A. True', 'B. False', 'C. sometimes', 'D. What\'s earth?']]
-
 # -------------------------
 def new_game():
     print('The genius quiz')
     guesses = []
-    correct_guesses = None
+    correct_guesses = 0
     question_num = 1
     for key in questions:
         print('---------------')
@@ -23,22 +21,44 @@ def new_game():
             print(i)
         guess = input('Enter (A, B, C or D)').upper()
         guesses.append(guess)
+        correct_guesses += check_answer(questions.get(key), guess)
         question_num += 1
+    display_score(correct_guesses, guesses)
+    play_again()
 # ------------------------
-def check_answer(userInput, correctAnswer):
-    score = 0
-    if userInput == correctAnswer:
+def check_answer(answer, guess):
+    if answer == guess:
         print('Correct!!!')
-        score += 1
-        print('Next one...')
-        return score
+        return 1
     else:
-        return score
+        print("Wrooong!")
+        return 0
 # -------------------------
-def display_score(score_num):
-    pass
+def display_score(correct_guesses, guesses):
+    print('-------------------------')
+    print('RESULTS')
+    print('-------------------------')
+    print('Answers: ', end='')
+    for i in questions:
+        print(questions.get(i), end='')
+    print()
+    print('guesses: ', end='')
+    for i in guesses:
+        print(i, end='')
+    print()
+    score = int(correct_guesses/len(questions) * 100)
+    print('Your score is ' + str(score) + '%')
 # -------------------------
 def play_again():
-    pass
+    res = input('you wanna play again?\n1 - Yes / 2 - No ')
+    if res == 1:
+        return True
+    else:
+        return False
 # -------------------------
 new_game()
+
+while play_again() == True:
+    new_game()
+
+print('byeee!!!')
