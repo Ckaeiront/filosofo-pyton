@@ -23,5 +23,3 @@ while True:
         break
 
 # 👆 my version of the code
-
-
