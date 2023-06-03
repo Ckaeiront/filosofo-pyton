@@ -8,7 +8,7 @@ class Car:
         self.year = year
         self.color = color
         self.motor = motor
-
+        
     def drive(self): # self is the object that is using this method
         print('this ' + self.model + ' is driving')
 
