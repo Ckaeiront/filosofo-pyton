@@ -260,6 +260,7 @@ shutil.copy('falagalera.txt', 'C:\\Users\\soule\\OneDrive\\Área de Trabalho\\vi
 #   used with modular programming, which is to separate program into parts
 
 # import module1 as msg
+
 from module1 import hello, bye
 
 

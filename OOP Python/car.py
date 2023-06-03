@@ -1,7 +1,8 @@
 # classes = blueprint for objects
+# self is already in the class and we don't need to pass it as argument
 
 class Car:
-    def __init__(self, make, model, year, color, motor): # self is already in the class and we don't need to pass it as argument
+    def __init__(self, make, model, year, color, motor): 
         self.make = make 
         self.model = model
         self.year = year
