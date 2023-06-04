@@ -4,6 +4,7 @@ from car import Car
 
 car_1 = Car('Mercedes', 'Benz', 2022, 'blue', 'Rubrivira')
 car_2 = Car('Ford', 'Mustang', 2022, 'red', 'Azulporã')
+car_3 = Car('Mazda', 'Furai', 2001, 'black', 'galinha')
 
 # print(car_1.make)
 # print(car_1.model)
