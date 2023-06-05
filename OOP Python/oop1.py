@@ -28,3 +28,4 @@ car_2.wheels = 2
 
 print(car_1.wheels)
 print(car_2.wheels)
+print(Car.wheels)
